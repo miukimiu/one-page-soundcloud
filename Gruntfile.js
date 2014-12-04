@@ -14,10 +14,6 @@ module.exports = function (grunt) {
         files: ['sass/{,**/}*.scss'],
         tasks: ['compass:dev']
       },
-      includes: {
-        files: ['pages/*', 'pages/**/*'],
-        tasks: ['includes']
-      },
       scripts: {
         files: ['assets/js/**/*.js', 'javascriptfiles.json'],
         tasks: ['uglify:vendor', 'uglify:header', 'uglify:footer'],
@@ -34,20 +30,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Grunt Includes
-    // https://www.npmjs.org/package/grunt-includes
-    includes: {
-      files: {
-        src: ['pages/*.html'], // Source files
-        dest: 'web', // Destination directory
-        flatten: true,
-        cwd: '.',
-        options: {
-          includePath: 'pages/includes/'
-        }
-      }
-    },
-
     // Grunt Contrib Compass
     // https://github.com/gruntjs/grunt-contrib-compass
     compass: {
@@ -60,6 +42,19 @@ module.exports = function (grunt) {
           environment: 'development',
           outputStyle: 'expanded',
           importPath: 'node_modules/bootstrap-sass',
+        }
+      },
+    },
+
+    jade: {
+      debug: {
+        options: {
+          data: {
+            debug: true
+          }
+        },
+        files: {
+          "index.html": "index.jade"
         }
       },
     },
@@ -100,12 +95,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-includes');
+  grunt.loadNpmTasks('grunt-contrib-jade');
 
   grunt.registerTask('default', [
     'compass:dev',
-    'includes',
     'uglify',
+    'jade',
     'watch'
   ]);
 };

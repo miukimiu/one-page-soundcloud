@@ -7,11 +7,15 @@ $ops-spacing-xs: round($ops-spacing / 4);    // 10px
 
 // typography
 $ops-font-stack:  'Helvetica Neue', 'Helvetica', sans-serif;
-$ops-font-normal: 400;
-$ops-font-bold:   600;
+$ops-font-normal: 200;
+$ops-font-semi-bold: 300;
+$ops-font-bold:   400;
 
 // main z-indexes
 $z-index-header: 10;
 $z-index-menus: 100;
 $z-index-main: 10;
 
+$ops-bg-width: 10000px;
+
+$ops-white: #fff;

@@ -1,0 +1,10 @@
+{
+    "vendor" : [
+        "pages/js/vendor/angular.min.js",
+        "pages/js/vendor/ng-plangular.min.js"
+    ],
+    "header" : [],
+    "footer" : [
+        "pages/js/main.js"
+    ]
+}

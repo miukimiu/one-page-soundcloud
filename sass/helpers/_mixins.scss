@@ -1,0 +1,16 @@
+// Mixins
+
+// vertical align
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+// remove margin and paddings
+@mixin no-margin-padding {
+    margin: 0;
+    padding: 0;
+}

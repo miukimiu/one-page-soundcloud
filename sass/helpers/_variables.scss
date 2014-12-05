@@ -4,6 +4,7 @@ $ops-spacing: 40px;                          // base spacing
 $ops-spacing-lg: round($ops-spacing * 2);    // 80px
 $ops-spacing-sm: round($ops-spacing / 2);    // 20px
 $ops-spacing-xs: round($ops-spacing / 4);    // 10px
+$ops-spacing-xxs: round($ops-spacing / 8);   // 5px
 
 // typography
 $ops-font-stack:  'Helvetica Neue', 'Helvetica', sans-serif;

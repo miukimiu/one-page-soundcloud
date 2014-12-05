@@ -2601,8 +2601,14 @@ body { font-family: "Advent Pro", Helvetica, Arial, sans-serif; font-weight: 200
 
 /* line 25, ../../sass/layout/_header.scss */
 #header { background: rgba(0, 0, 0, 0.6); }
-/* line 27, ../../sass/layout/_header.scss */
-#header .header-logo a { font-size: 20px; }
+/* line 28, ../../sass/layout/_header.scss */
+#header .header-logo { font-size: 20px; line-height: 40px; padding: 0; margin: 0; }
+/* line 35, ../../sass/layout/_header.scss */
+#header .header-menu { list-style-type: none; text-align: right; }
+/* line 6, ../../../../.rvm/gems/ruby-2.0.0-p353@global/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_inline-list.scss */
+#header .header-menu, #header .header-menu li { margin: 0; padding: 0; display: inline; }
+/* line 39, ../../sass/layout/_header.scss */
+#header .header-menu a { display: inline-block; line-height: 40px; padding: 0 10px; }
 
 /* line 4, ../../sass/layout/_main.scss */
 #main .header-inner { position: relative; margin-left: -15px; margin-right: -15px; }

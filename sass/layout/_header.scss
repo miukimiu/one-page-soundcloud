@@ -24,7 +24,23 @@
 
 #header {
     background: rgba($ops-black, 0.6);
-    .header-logo a {
+
+    .header-logo {
         font-size: 20px;
+        line-height: 40px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-menu {
+        @include inline-list();
+        text-align: right;
+
+        a {
+            display: inline-block;
+            line-height: 40px;
+            padding: 0 $ops-spacing-xs;
+        }
     }
 }
+

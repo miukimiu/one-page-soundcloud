@@ -1,0 +1,30 @@
+// Header Styles
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 100%;
+
+    .header-inner {
+        position: relative;
+        @include make-row();
+
+        .header-logo {
+            @include make-sm-column(4);
+            @include make-xs-column(12);
+        }
+        .header-menu {
+            @include make-sm-column(8);
+            @include make-xs-column(12);
+        }
+    }
+}
+
+#header {
+    background: rgba($ops-black, 0.6);
+    .header-logo a {
+        font-size: 20px;
+    }
+}

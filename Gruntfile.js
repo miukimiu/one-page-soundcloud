@@ -58,7 +58,7 @@ module.exports = function (grunt) {
       dev: {
         options: {
           environment: 'development',
-          outputStyle: 'expanded',
+          outputStyle: 'compact',
           importPath: 'node_modules/bootstrap-sass',
         }
       },
@@ -106,7 +106,6 @@ module.exports = function (grunt) {
     'compass:dev',
     'includes',
     'uglify',
-    'jade',
     'watch'
   ]);
 };

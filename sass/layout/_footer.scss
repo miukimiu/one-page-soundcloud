@@ -1,0 +1,65 @@
+// footer styles
+
+#footer {
+    min-height: 80px;;
+    font-size: 10px;
+    margin-top: $ops-spacing-lg;
+    padding-top: $ops-spacing;
+    padding-bottom: $ops-spacing;
+
+    // layout structure variables
+    $footer-copyright-columns: 4;
+    $footer-menu-columns: 6;
+
+    // layout structure
+    .footer-inner {
+        @include make-row();
+    }
+    .footer-copyright {
+        @include make-xs-column(10);
+        @include make-sm-column($footer-copyright-columns);
+    }
+    .footer-menu {
+        @include make-xs-column(10);
+        @include make-sm-column($footer-menu-columns);
+    }
+
+    // link styles
+    a {
+        color: $ops-gray-light;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            color: darken($ops-gray-light, 20%);
+        }
+    }
+}
+
+.footer-menu {
+    float: left;
+    text-align: right;
+    @extend %inline-list;
+
+}
+
+.footer-copyright {
+    p {
+        margin: 0;
+    }
+}
+
+.footer-menu,
+.footer-copyright {
+
+    // mobile only
+    @media (max-width: $screen-xs-max) {
+        text-align: left;
+        margin: $ops-spacing-xs 0;
+    }
+    // tablets and up
+    @media (min-width: $screen-sm-min) {
+        @include vertical-align();
+    }
+}

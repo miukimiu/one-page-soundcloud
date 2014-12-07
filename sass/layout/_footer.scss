@@ -1,27 +1,27 @@
 // footer styles
 
 #footer {
-    min-height: 80px;;
-    font-size: 10px;
-    margin-top: $ops-spacing-lg;
-    padding-top: $ops-spacing;
-    padding-bottom: $ops-spacing;
 
-    // layout structure variables
-    $footer-copyright-columns: 4;
-    $footer-menu-columns: 6;
+    // variables
+    $footer-height: 50px;
+
+    // styles
+    color: $ops-gray-light;
+    font-size: 12px;
+    background: $ops-brand;
 
     // layout structure
     .footer-inner {
         @include make-row();
     }
     .footer-copyright {
-        @include make-xs-column(10);
-        @include make-sm-column($footer-copyright-columns);
+        @include make-sm-column(12);
+        @include make-md-column(6);
+        margin: 0;
     }
     .footer-menu {
-        @include make-xs-column(10);
-        @include make-sm-column($footer-menu-columns);
+        @include make-sm-column(12);
+        @include make-md-column(6);
     }
 
     // link styles
@@ -32,34 +32,28 @@
         &:focus,
         &:active {
             text-decoration: none;
-            color: darken($ops-gray-light, 20%);
+            color: $ops-gray;
         }
     }
-}
+    .footer-menu {
+        text-align: right;
+        @extend %inline-list;
 
-.footer-menu {
-    float: left;
-    text-align: right;
-    @extend %inline-list;
-
-}
-
-.footer-copyright {
-    p {
-        margin: 0;
+        a {
+            font-weight: $ops-font-bold;
+        }
     }
-}
+    .footer-menu,
+    .footer-copyright {
 
-.footer-menu,
-.footer-copyright {
-
-    // mobile only
-    @media (max-width: $screen-xs-max) {
-        text-align: left;
-        margin: $ops-spacing-xs 0;
-    }
-    // tablets and up
-    @media (min-width: $screen-sm-min) {
-        @include vertical-align();
+        // tablets landscape above
+        @media (min-width: $screen-md-min) {
+            line-height: $footer-height;
+        }
+        // tablets portrait below
+        @media (max-width: $screen-sm-max) {
+            text-align: left;
+            margin: $ops-spacing-xs 0;
+        }
     }
 }

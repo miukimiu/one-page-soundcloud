@@ -2661,10 +2661,12 @@ body { font-family: "Advent Pro", Helvetica, Arial, sans-serif; font-weight: 200
 /* line 31, ../../sass/layout/_footer.scss */
 #footer a:hover, #footer a:focus, #footer a:active { text-decoration: none; color: #a5a6aa; }
 /* line 38, ../../sass/layout/_footer.scss */
+#footer p { margin-bottom: 0; }
+/* line 41, ../../sass/layout/_footer.scss */
 #footer .footer-menu { text-align: right; }
-/* line 42, ../../sass/layout/_footer.scss */
+/* line 45, ../../sass/layout/_footer.scss */
 #footer .footer-menu a { font-weight: 400; }
-@media (min-width: 992px) { /* line 46, ../../sass/layout/_footer.scss */
+@media (min-width: 992px) { /* line 49, ../../sass/layout/_footer.scss */
   #footer .footer-menu, #footer .footer-copyright { line-height: 50px; } }
-@media (max-width: 991px) { /* line 46, ../../sass/layout/_footer.scss */
+@media (max-width: 991px) { /* line 49, ../../sass/layout/_footer.scss */
   #footer .footer-menu, #footer .footer-copyright { text-align: left; margin: 10px 0; } }

@@ -35,6 +35,9 @@
             color: $ops-gray;
         }
     }
+    p {
+        margin-bottom: 0;
+    }
     .footer-menu {
         text-align: right;
         @extend %inline-list;

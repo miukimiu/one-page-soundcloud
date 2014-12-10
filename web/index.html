@@ -21,8 +21,10 @@
         <![endif]-->
     </head>
 
-    <body>
+    <body ng-app="plangular">
         
+        <div plangular="http://soundcloud.com/jxnblk/plangular"></div>
+
             <body>
                 
                 <!-- header -->
@@ -49,14 +51,30 @@
                 <!-- / header -->
 
         <!-- main -->
-        <main id="main" role="main">
-            
+        <main id="main" role="main" plangular="http://soundcloud.com/jxnblk/sets/yello">
+                
                 <section id="home">
                     <div class="home-player">
                         <div class="container">
                             <div class="main-inner">
                                 <div class="content">
-                                    <a href="" class="flaticon-play33"></a>
+                                    
+                                    <h3 class="table-cell full-width m0">{{ user.username || '&nbsp;' }}</h3>
+                                    <h2>{{ currentTime | prettyTime }} - {{ duration | prettyTime }}</h2>
+
+                                    <div ng-click="playPause(player.playlistIndex)">
+                                        <a ng-if="player.tracks[player.i] != track || !player.playing">
+                                            <i class="flaticon-play33"></i>
+                                        </a>
+                                        <a ng-if="player.tracks[player.i] == track && player.playing">
+                                            <i class="flaticon-pause11"></i>
+                                        </a>
+                                    </div>
+
+                                    <progress value="{{ currentTime / duration || 0 }}"
+                                    ng-click="seek($event)">
+                                    {{ currentTime / duration }}
+                                  </progress>
                                 </div>
                             </div>
                         </div>

@@ -2632,19 +2632,23 @@ a:hover, a:active, a:focus { text-decoration: none; }
 #main .header-inner .content { position: relative; float: left; width: 100%; min-height: 1px; padding-left: 15px; padding-right: 15px; }
 
 /* line 1, ../../sass/layout/_home.scss */
-#home { -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; position: relative; min-height: 520px; background: #00fec6; }
+#home { -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; position: relative; min-height: 360px; background: #00fec6; }
 /* line 12, ../../sass/layout/_home.scss */
 #home .home-player { padding-top: 120px; color: #fff; text-align: center; position: relative; z-index: 99; }
 /* line 23, ../../sass/layout/_home.scss */
-#home .home-player::before { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; content: ""; display: block; position: absolute; top: 120px; left: 50%; width: 400px; height: 400px; background: rgba(37, 37, 37, 0.2); margin-left: -200px; z-index: 0; }
+#home .home-player::before { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; content: ""; display: block; position: absolute; top: 120px; left: 50%; width: 200px; height: 200px; background: rgba(37, 37, 37, 0.2); margin-left: -100px; z-index: 0; }
 /* line 36, ../../sass/layout/_home.scss */
 #home .home-player a:before { font-size: 60px; }
 /* line 39, ../../sass/layout/_home.scss */
 #home .home-player i { color: #fff; }
-/* line 44, ../../sass/layout/_home.scss */
-#home .home-player-content { position: relative; z-index: 9; }
-/* line 48, ../../sass/layout/_home.scss */
-#home .home-player-content i:before { font-size: 40px; }
+/* line 41, ../../sass/layout/_home.scss */
+#home .home-player i:before { margin: 0; }
+/* line 47, ../../sass/layout/_home.scss */
+#home .home-player-controls { position: relative; padding-top: 30px; z-index: 9; }
+/* line 52, ../../sass/layout/_home.scss */
+#home .home-player-controls i:before { font-size: 40px; }
+/* line 56, ../../sass/layout/_home.scss */
+#home .home-player-info { background: rgba(37, 37, 37, 0.2); margin-top: 120px; padding: 20px 0; }
 
 /* line 3, ../../sass/layout/_footer.scss */
 #footer { color: #eee; font-size: 12px; background: #000; }

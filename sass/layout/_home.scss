@@ -1,12 +1,12 @@
 #home {
 
     // variables
-    $circular-size: 400px;
+    $circular-size: 200px;
 
     // styles
     @include background-size(cover);
     position: relative;
-    min-height: $ops-spacing-xlg + $circular-size;
+    min-height: $ops-spacing-xlg + $circular-size + $ops-spacing;
     background: $ops-brand;
 
     .home-player {
@@ -38,15 +38,24 @@
         }
         i {
             color: $ops-white;
+            &:before {
+                margin: 0;
+            }
         }
     }
 
-    .home-player-content {
+    .home-player-controls {
         position: relative;
+        padding-top: 30px;
         z-index: 9;
 
         i:before { 
             font-size: 40px;
         }
+    }
+    .home-player-info {
+        background: rgba($ops-gray-dark, 0.2);
+        margin-top: $ops-spacing-xlg;
+        padding: $ops-spacing-sm 0 ;
     }
 } 

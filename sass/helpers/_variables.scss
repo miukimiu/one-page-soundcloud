@@ -1,6 +1,7 @@
 // smg global variables
 
 $ops-spacing: 40px;                          // base spacing
+$ops-spacing-xlg: round($ops-spacing * 3);    // 80px
 $ops-spacing-lg: round($ops-spacing * 2);    // 80px
 $ops-spacing-sm: round($ops-spacing / 2);    // 20px
 $ops-spacing-xs: round($ops-spacing / 4);    // 10px
@@ -20,9 +21,9 @@ $z-index-main: 10;
 $ops-bg-width: 10000px;
 
 // colors
-$ops-brand: #5fbcc3;
+$ops-brand: #00fec6;
 $ops-white: #fff;
 $ops-black: #000;
 $ops-gray-light: #eee;
 $ops-gray: #a5a6aa;
-$ops-gray-dark: #333333;
+$ops-gray-dark: #252525;

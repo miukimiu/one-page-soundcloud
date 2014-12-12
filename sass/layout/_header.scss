@@ -4,7 +4,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    height: 40px;
+    height: $ops-spacing-lg;
     width: 100%;
     z-index: 999;
 
@@ -24,11 +24,13 @@
 }
 
 #header {
-    background: rgba($ops-black, 0.6);
+    background: rgba($ops-gray-dark, 1);
 
     .header-logo {
         font-size: 20px;
-        line-height: 40px;
+        font-weight: $ops-font-normal;
+        text-transform: uppercase;
+        line-height: $ops-spacing-lg;
         padding: 0;
         margin: 0;
     }
@@ -39,7 +41,7 @@
 
         a {
             display: inline-block;
-            line-height: 40px;
+            line-height: $ops-spacing-lg;
             padding: 0 $ops-spacing-xs;
         }
     }

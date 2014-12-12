@@ -181,9 +181,9 @@ body { font-family: "Advent Pro", Helvetica, Arial, sans-serif; font-size: 14px;
 input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
 
 /* line 48, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
-a { color: #61bac2; text-decoration: none; }
+a { color: #00fec6; text-decoration: none; }
 /* line 52, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
-a:hover, a:focus { color: #3c939b; text-decoration: underline; }
+a:hover, a:focus { color: #00b28a; text-decoration: underline; }
 /* line 58, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
 a:focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
 
@@ -289,10 +289,10 @@ mark, .mark { background-color: #fcf8e3; padding: .2em; }
 .text-muted { color: #777777; }
 
 /* line 5, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-.text-primary { color: #61bac2; }
+.text-primary { color: #00fec6; }
 
 /* line 8, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-primary:hover { color: #43a4ad; }
+a.text-primary:hover { color: #00cb9e; }
 
 /* line 5, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 .text-success { color: #3c763d; }
@@ -322,10 +322,10 @@ a.text-danger:hover { color: #843534; }
 .bg-primary { color: #fff; }
 
 /* line 5, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-.bg-primary { background-color: #61bac2; }
+.bg-primary { background-color: #00fec6; }
 
 /* line 8, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-primary:hover { background-color: #43a4ad; }
+a.bg-primary:hover { background-color: #00cb9e; }
 
 /* line 5, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 .bg-success { background-color: #dff0d8; }
@@ -1054,7 +1054,7 @@ output { display: block; padding-top: 7px; font-size: 14px; line-height: 1.42857
 /* line 115, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-control { display: block; width: 100%; height: 34px; padding: 6px 12px; font-size: 14px; line-height: 1.42857; color: #656565; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
 /* line 57, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.form-control:focus { border-color: #61bac2; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(97, 186, 194, 0.6); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(97, 186, 194, 0.6); }
+.form-control:focus { border-color: #00fec6; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 254, 198, 0.6); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 254, 198, 0.6); }
 /* line 103, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss */
 .form-control::-moz-placeholder { color: #777777; opacity: 1; }
 /* line 107, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss */
@@ -1248,15 +1248,15 @@ textarea.input-lg, .form-group-lg .form-control, select[multiple].input-lg, .for
 .btn-default .badge { color: #fff; background-color: #333; }
 
 /* line 63, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-primary { color: #fff; background-color: #61bac2; border-color: #4fb2bb; }
+.btn-primary { color: #fff; background-color: #00fec6; border-color: #00e5b2; }
 /* line 11, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { color: #fff; background-color: #43a4ad; border-color: #398c93; }
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { color: #fff; background-color: #00cb9e; border-color: #00a782; }
 /* line 21, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle { background-image: none; }
 /* line 29, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active { background-color: #61bac2; border-color: #4fb2bb; }
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active { background-color: #00fec6; border-color: #00e5b2; }
 /* line 40, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_buttons.scss */
-.btn-primary .badge { color: #61bac2; background-color: #fff; }
+.btn-primary .badge { color: #00fec6; background-color: #fff; }
 
 /* line 67, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-success { color: #fff; background-color: #5cb85c; border-color: #5cb85c; }
@@ -1303,13 +1303,13 @@ textarea.input-lg, .form-group-lg .form-control, select[multiple].input-lg, .for
 .btn-danger .badge { color: #d9534f; background-color: #fff; }
 
 /* line 88, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-link { color: #61bac2; font-weight: normal; border-radius: 0; }
+.btn-link { color: #00fec6; font-weight: normal; border-radius: 0; }
 /* line 93, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link { background-color: transparent; -webkit-box-shadow: none; box-shadow: none; }
 /* line 101, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active { border-color: transparent; }
 /* line 107, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-link:hover, .btn-link:focus { color: #3c939b; text-decoration: underline; background-color: transparent; }
+.btn-link:hover, .btn-link:focus { color: #00b28a; text-decoration: underline; background-color: transparent; }
 /* line 115, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus { color: #777777; text-decoration: none; }
 
@@ -1353,7 +1353,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { text-decoration: none; color: #505053; background-color: #f5f5f5; }
 
 /* line 86, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss */
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { color: #fff; text-decoration: none; outline: 0; background-color: #61bac2; }
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { color: #fff; text-decoration: none; outline: 0; background-color: #00fec6; }
 
 /* line 101, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss */
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus { color: #777777; }
@@ -1610,7 +1610,10 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 html, body { margin: 0; padding: 0; }
 
 /* line 5, ../../sass/base/_base.scss */
-body { font-family: "Advent Pro", Helvetica, Arial, sans-serif; font-weight: 200; width: 100%; height: 100%; }
+body { width: 100%; height: 100%; background: #252525; font-family: "Advent Pro", Helvetica, Arial, sans-serif; font-weight: 200; }
+
+/* line 14, ../../sass/base/_base.scss */
+a:hover, a:active, a:focus { text-decoration: none; }
 
 @font-face { font-family: "Flaticon"; src: url("../fonts/flaticon.eot"); src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"), url("../fonts/flaticon.woff") format("woff"), url("../fonts/flaticon.ttf") format("truetype"), url("../fonts/flaticon.svg") format("svg"); font-weight: normal; font-style: normal; }
 /* line 15, ../../sass/base/_icons.scss */
@@ -2592,7 +2595,7 @@ body { font-family: "Advent Pro", Helvetica, Arial, sans-serif; font-weight: 200
 .flaticon-zoom23:before { content: "\e144"; }
 
 /* line 3, ../../sass/layout/_header.scss */
-#header { position: fixed; left: 0; top: 0; height: 40px; width: 100%; z-index: 999; }
+#header { position: fixed; left: 0; top: 0; height: 80px; width: 100%; z-index: 999; }
 /* line 11, ../../sass/layout/_header.scss */
 #header .header-inner { position: relative; margin-left: -15px; margin-right: -15px; }
 /* line 14, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -2609,15 +2612,15 @@ body { font-family: "Advent Pro", Helvetica, Arial, sans-serif; font-weight: 200
   #header .header-inner .header-menu { float: left; width: 66.66667%; } }
 
 /* line 26, ../../sass/layout/_header.scss */
-#header { background: rgba(0, 0, 0, 0.6); }
+#header { background: #252525; }
 /* line 29, ../../sass/layout/_header.scss */
-#header .header-logo { font-size: 20px; line-height: 40px; padding: 0; margin: 0; }
-/* line 36, ../../sass/layout/_header.scss */
+#header .header-logo { font-size: 20px; font-weight: 200; text-transform: uppercase; line-height: 80px; padding: 0; margin: 0; }
+/* line 38, ../../sass/layout/_header.scss */
 #header .header-menu { list-style-type: none; text-align: right; }
 /* line 6, ../../../../.rvm/gems/ruby-2.0.0-p353@global/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_inline-list.scss */
 #header .header-menu, #header .header-menu li { margin: 0; padding: 0; display: inline; }
-/* line 40, ../../sass/layout/_header.scss */
-#header .header-menu a { display: inline-block; line-height: 40px; padding: 0 10px; }
+/* line 42, ../../sass/layout/_header.scss */
+#header .header-menu a { display: inline-block; line-height: 80px; padding: 0 10px; }
 
 /* line 4, ../../sass/layout/_main.scss */
 #main .header-inner { position: relative; margin-left: -15px; margin-right: -15px; }
@@ -2629,15 +2632,22 @@ body { font-family: "Advent Pro", Helvetica, Arial, sans-serif; font-weight: 200
 #main .header-inner .content { position: relative; float: left; width: 100%; min-height: 1px; padding-left: 15px; padding-right: 15px; }
 
 /* line 1, ../../sass/layout/_home.scss */
-#home { position: relative; height: 500px; background: url(../images/music-main-player.jpg) no-repeat center center fixed; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
-
-/* line 8, ../../sass/layout/_home.scss */
-.home-player { position: absolute; bottom: 0; width: 100%; height: 140px; background: rgba(97, 186, 194, 0.4); text-align: center; z-index: 9; }
-/* line 17, ../../sass/layout/_home.scss */
-.home-player a:before { font-size: 60px; }
+#home { -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; position: relative; min-height: 520px; background: #00fec6; }
+/* line 12, ../../sass/layout/_home.scss */
+#home .home-player { padding-top: 120px; color: #fff; text-align: center; position: relative; z-index: 99; }
+/* line 23, ../../sass/layout/_home.scss */
+#home .home-player::before { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; content: ""; display: block; position: absolute; top: 120px; left: 50%; width: 400px; height: 400px; background: rgba(37, 37, 37, 0.2); margin-left: -200px; z-index: 0; }
+/* line 36, ../../sass/layout/_home.scss */
+#home .home-player a:before { font-size: 60px; }
+/* line 39, ../../sass/layout/_home.scss */
+#home .home-player i { color: #fff; }
+/* line 44, ../../sass/layout/_home.scss */
+#home .home-player-content { position: relative; z-index: 9; }
+/* line 48, ../../sass/layout/_home.scss */
+#home .home-player-content i:before { font-size: 40px; }
 
 /* line 3, ../../sass/layout/_footer.scss */
-#footer { color: #eee; font-size: 12px; background: #5fbcc3; }
+#footer { color: #eee; font-size: 12px; background: #000; }
 /* line 14, ../../sass/layout/_footer.scss */
 #footer .footer-inner { margin-left: -15px; margin-right: -15px; }
 /* line 14, ../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -2670,3 +2680,8 @@ body { font-family: "Advent Pro", Helvetica, Arial, sans-serif; font-weight: 200
   #footer .footer-menu, #footer .footer-copyright { line-height: 50px; } }
 @media (max-width: 991px) { /* line 49, ../../sass/layout/_footer.scss */
   #footer .footer-menu, #footer .footer-copyright { text-align: left; margin: 10px 0; } }
+
+/* line 1, ../../sass/layout/_music-list.scss */
+#music-list { padding: 40px; text-align: center; }
+/* line 5, ../../sass/layout/_music-list.scss */
+#music-list a { display: inline; text-align: center; }

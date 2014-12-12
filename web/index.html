@@ -55,37 +55,54 @@
                 
                 <section id="home">
                     <div class="home-player">
-                        <div class="container">
-                            <div class="main-inner">
-                                <div class="content">
-                                    
-                                    <h3 class="table-cell full-width m0">{{ user.username || '&nbsp;' }}</h3>
-                                    <h2>{{ currentTime | prettyTime }} - {{ duration | prettyTime }}</h2>
-
-                                    <div ng-click="playPause(player.playlistIndex)">
-                                        <a ng-if="player.tracks[player.i] != track || !player.playing">
-                                            <i class="flaticon-play33"></i>
-                                        </a>
-                                        <a ng-if="player.tracks[player.i] == track && player.playing">
-                                            <i class="flaticon-pause11"></i>
-                                        </a>
-                                    </div>
-
-                                    <progress value="{{ currentTime / duration || 0 }}"
-                                    ng-click="seek($event)">
-                                    {{ currentTime / duration }}
-                                  </progress>
-                                </div>
+                        
+                        <div class="home-player-content">
+                            <div>
+                                <p>{{ user.username }}</p>
+                                <h1>{{ title }}</h1>
+                                <!-- or in the track object -->
+                                <p>{{ track.user.username }}</p>
+                                <h1>{{ track.title }}</h1>
                             </div>
+
+                            <div ng-click="playPause(player.playlistIndex)">
+                                <a ng-if="player.tracks[player.i] != track || !player.playing">
+                                    <i class="flaticon-play33"></i>
+                                </a>
+                                <a ng-if="player.tracks[player.i] == track && player.playing">
+                                    <i class="flaticon-pause11"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a ng-click="previous()"><i class="flaticon-previous5"></i></a>
+                                <a ng-click="next()"><i class="flaticon-next8"></i></a>
+                            </div>
+
+                            <img ng-src="{{ track.waveform_url }}" alt="waveform" />
+
+                            <progress value="{{ currentTime / duration || 0 }}"
+                            ng-click="seek($event)">
+                            {{ currentTime / duration }}
+                          </progress>
                         </div>
                     </div>
                     
                 </section>
 
-                <section id="about">
+                <section id="music-list">
                     <div class="container">
                         <div class="main-inner">
-                            <div class="content"></div>
+                            <div class="content">
+                                <h2>Music List</h2>
+                                <div ng-repeat="t in tracks">
+                                    <a href="#{{ example.id }}" class="block p1 nav-item"
+                                        ng-click="playPause($index)"
+                                        ng-class="{ 'bg-darken-1': player.currentTrack == t }">
+                                        <p>{{ $index }} - {{ t.user.username }} - {{ t.title }}</p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

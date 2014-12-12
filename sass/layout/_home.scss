@@ -1,20 +1,61 @@
 #home {
-    position: relative;
-    height: 500px;
-    background: url(../images/music-main-player.jpg) no-repeat center center fixed;
+
+    // variables
+    $circular-size: 200px;
+
+    // styles
     @include background-size(cover);
-} 
+    position: relative;
+    min-height: $ops-spacing-xlg + $circular-size + $ops-spacing;
+    background: $ops-brand;
 
-.home-player {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 140px;
-    background: rgba($brand-primary, 0.4);
-    text-align: center;
-    z-index: 9;
+    .home-player {
+        
 
-    a:before {
-        font-size: 60px;
+        // styles
+        padding-top: $ops-spacing-xlg;
+        color: $ops-white;
+        text-align: center;
+        position: relative;
+        z-index: 99;
+
+        // circular player
+        &::before {
+            @include border-radius(50%);
+            content: "";
+            display: block;
+            position: absolute;
+            top: $ops-spacing-xlg;
+            left: 50%;
+            width: $circular-size;
+            height: $circular-size;
+            background: rgba($ops-gray-dark, 0.2);
+            margin-left: - ($circular-size / 2);
+            z-index: 0;
+        }
+        a:before {
+            font-size: 60px;
+        }
+        i {
+            color: $ops-white;
+            &:before {
+                margin: 0;
+            }
+        }
     }
-}
+
+    .home-player-controls {
+        position: relative;
+        padding-top: 30px;
+        z-index: 9;
+
+        i:before { 
+            font-size: 40px;
+        }
+    }
+    .home-player-info {
+        background: rgba($ops-gray-dark, 0.2);
+        margin-top: $ops-spacing-xlg;
+        padding: $ops-spacing-sm 0 ;
+    }
+} 

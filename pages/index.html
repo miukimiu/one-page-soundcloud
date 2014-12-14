@@ -10,34 +10,55 @@ include "head.html"
         <main id="main" role="main" plangular="http://soundcloud.com/jxnblk/sets/yello">
                 
                 <section id="home">
+
+                    <!-- Home player -->
                     <div class="home-player">
-                        
-                        <div class="home-player-controls">
 
-                            <div ng-click="playPause(player.playlistIndex)">
-                                <a ng-if="player.tracks[player.i] != track || !player.playing">
-                                    <i class="flaticon-play33"></i>
-                                </a>
-                                <a ng-if="player.tracks[player.i] == track && player.playing">
-                                    <i class="flaticon-pause11"></i>
-                                </a>
-                            </div>
+                        <div class="container">
 
-                            <div>
-                                <a ng-click="previous()"><i class="flaticon-previous5"></i></a>
-                                <a ng-click="next()"><i class="flaticon-next8"></i></a>
-                            </div>
+                            <!-- Home player inner -->
+                            <div class="home-player-inner">
 
-                            <progress value="{{ currentTime / duration || 0 }}"
-                            ng-click="seek($event)">
-                            {{ currentTime / duration }}
-                          </progress>
+                                <!-- Home player info -->
+                                <div class="home-player-info">
+                                    <h3>{{ player.currentTrack.user.username || '&nbsp;'}} - {{ player.currentTrack.title || '&nbsp;' }} </h3>
+                                </div>
+                                <!-- / Home player info -->
+                                
+                                <!-- Home player controls -->
+                                <div class="home-player-controls">
+
+                                    <ul>
+                                        <li>
+                                            <a ng-click="previous()"><i class="flaticon-previous5"></i></a>
+                                        </li>
+
+                                        <li ng-click="playPause(player.playlistIndex)">
+                                            <a ng-if="player.tracks[player.i] != track || !player.playing">
+                                                <i class="flaticon-play33"></i>
+                                            </a>
+
+                                            <a ng-if="player.tracks[player.i] == track && player.playing">
+                                                <i class="flaticon-pause11"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a ng-click="next()"><i class="flaticon-next8"></i></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <!-- / Home player controls -->
+
+                            <!-- Home player inner -->
+                            <div class="home-player-inner">
+
                         </div>
-
-                        <div class="home-player-info">
-                            <h2>{{ player.currentTrack.user.username || '&nbsp;'}} - {{ player.currentTrack.title || '&nbsp;' }} </h2>
-                        </div>
+                        <!-- / Container -->
+                   
                     </div>
+                    <!-- / Home player -->
                     
                 </section>
 

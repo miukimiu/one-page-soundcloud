@@ -20,7 +20,7 @@ module.exports = function (grunt) {
       },
       scripts: {
         files: ['assets/js/**/*.js', 'javascriptfiles.json'],
-        tasks: ['uglify:vendor', 'uglify:header', 'uglify:footer'],
+        tasks: ['uglify:header', 'uglify:footer'],
         options: {
           interrupt: false,
         }

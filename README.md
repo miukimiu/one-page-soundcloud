@@ -6,7 +6,7 @@ There are now many great resources in order do achieve that. After some research
 With some html and CSS/SASS the result was an one page site.
 
 You can see it in action, here:
-http://miukimiu.github.io/onepagesoundcloud/
+http://miukimiu.github.io/one-page-soundcloud/
 
 ## Getting Started
 * Install Node from http://nodejs.org/. This projects uses Grunt to minify javascript files and compile sass files. Grunt and Grunt plugins are installed and managed via npm, the Node.js package manager.

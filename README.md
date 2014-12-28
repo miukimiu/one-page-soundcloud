@@ -1,10 +1,8 @@
 One Page Soundcloud
 =================
 
-As a **Soundcloud** lover, I allways wanted to create a simple page with custom players. 
-There are now many great resources in order do achieve that. 
-
-After some research I found Pangular, an AngularJS Plugin that allows to create custom *Soundcloud* players in an easy way.
+As a **Soundcloud** lover, I allways wanted to create a single page with custom players. 
+There are now many great resources in order do achieve that. After some research I found Pangular, an AngularJS Plugin that allows to create custom *Soundcloud* players in an easy way.
 With some html and CSS/SASS the result was an one page site.
 
 You can see it in action, here:

@@ -1,10 +1,5 @@
 {
-    "vendor" : [
-        "frontend/js/vendor/angular.min.js",
-        "frontend/js/vendor/ng-plangular.min.js"
-    ],
+    "vendor" : [],
     "header" : [],
-    "footer" : [
-        "frontend/js/main.js"
-    ]
+    "footer" : []
 }

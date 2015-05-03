@@ -1,0 +1,49 @@
+// Header Styles
+
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: $ops-spacing-lg;
+    width: 100%;
+    z-index: 999;
+
+    .header-inner {
+        position: relative;
+        @include make-row();
+
+        .header-logo {
+            @include make-sm-column(4);
+            @include make-xs-column(12);
+        }
+        .header-menu {
+            @include make-sm-column(8);
+            @include make-xs-column(12);
+        }
+    }
+}
+
+#header {
+    background: rgba($ops-gray-dark, 1);
+
+    .header-logo {
+        font-size: 20px;
+        font-weight: $ops-font-normal;
+        text-transform: uppercase;
+        line-height: $ops-spacing-lg;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-menu {
+        display: inline-block;
+        text-align: right;
+
+        a {
+            display: inline-block;
+            line-height: $ops-spacing-lg;
+            padding: 0 $ops-spacing-xs;
+        }
+    }
+}
+

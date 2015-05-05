@@ -1,6 +1,6 @@
 // footer styles
 
-#footer {
+.footer {
 
     // variables
     $footer-height: 50px;
@@ -15,13 +15,13 @@
         @include make-row();
     }
     .footer-copyright {
-        @include make-sm-column(12);
-        @include make-md-column(6);
+        //@include make-sm-column(12);
+        @include make-xs-column(6);
         margin: 0;
     }
     .footer-menu {
-        @include make-sm-column(12);
-        @include make-md-column(6);
+        @include make-xs-column(6);
+        //@include make-md-column(6);
     }
 
     // link styles
@@ -42,9 +42,8 @@
         text-align: right;
         display: block;
 
-        a {
+        li {
             display: inline-block;
-            font-weight: $ops-font-bold;
         }
     }
     .footer-menu,

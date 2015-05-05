@@ -1,16 +1,5 @@
 // Main Styles
 
-#main {
-    .header-inner {
-        position: relative;
-        @include make-row();
-
-        .content {
-            @include make-xs-column(12);
-        }
-    }
-}
-
 .home {
 
     // structure

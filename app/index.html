@@ -52,27 +52,20 @@
 
     <main id="main" role="main" plangular="http://soundcloud.com/jxnblk/sets/yello">
       <div ng-view=""></div>
+    
+    
+      <!-- footer -->
+      <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                {{playlist.user.username}} - {{track.title}}
+            </div>
+        </div>
+      </footer>
+      <!-- /footer -->
+
     </main>
     <!-- /main  -->
-    
-    <!-- footer -->
-    <footer class="footer" role="contentinfo">
-      <div class="container">
-          <div class="footer-inner">
-              <div class="footer-copyright">
-                  <p>© Copyright - Miuki Miu</p>
-              </div>
-              <nav class="footer-menu">
-                  <ul>
-                      <li><a href="#">Facebook</a></li>
-                      <li><a href="#">Twitter</a></li>
-                  </ul>
-              </nav>
-          </div>
-      </div>
-  </footer>
-  <!-- /footer -->
-
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>

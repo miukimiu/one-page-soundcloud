@@ -34,3 +34,4 @@ angular
 
       plangularConfigProvider.clientId = '7d4f2bbce5b7ca506cda8515dc002f71';
   });
+  

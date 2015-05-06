@@ -51,12 +51,11 @@
 
         // tablets landscape above
         @media (min-width: $screen-md-min) {
-            line-height: $footer-height;
+    
         }
         // tablets portrait below
         @media (max-width: $screen-sm-max) {
-            text-align: left;
-            margin: $ops-spacing-xs 0;
+        
         }
     }
 }

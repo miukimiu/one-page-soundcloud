@@ -10,29 +10,29 @@
 
     .header-inner {
         position: relative;
+        padding: 20px 0;
         @include make-row();
 
         .header-logo {
-            @include make-sm-column(4);
-            //@include make-xs-column(12);
+            @include make-xs-column(12);
+            @include make-sm-column(6);
         }
         .header-menu {
-            @include make-sm-column(8);
-           // @include make-xs-column(12);
+            @include make-xs-column(12);
+           @include make-sm-column(6);
         }
     }
 }
 
 .header {
-    //background: rgba($ops-gray-dark, 1);
     height: $ops-spacing-lg;
 
     .header-logo {
         h1 {
-            line-height: $ops-spacing-lg;
             padding: 0;
             margin: 0;
             font-size: 20px;
+            line-height: 1.2;
         }
         a {
             font-weight: $ops-font-normal;
@@ -52,7 +52,6 @@
         }
         a {
             display: block;
-            line-height: $ops-spacing-lg;
             padding: 0 $ops-spacing-xs;
             color: $ops-white;
         }

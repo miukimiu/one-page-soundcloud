@@ -5,12 +5,8 @@
     <div class="home-player">
 
       <div class="home-player-progress">
-        <div class="container">  
-          <progress ng-value="currentTime / duration || 0">
-            {{ currentTime / duration || 0 }}
-          </progress>
-
-          <p>{{playlist.user.username}} - {{track.title}} </p>
+        <div class="container"> 
+          <p>Playing: {{playlist.user.username}} - {{track.title}} </p>
         </div>
       </div>
 
@@ -20,7 +16,7 @@
 
               <ul>
                   <li>
-                      <a ng-click="previous()"><i class="flaticon-rewind45"></i></a>
+                      <a ng-click="previous()"><i class="flaticon-rewind45 is-btn"></i></a>
                   </li>
                   <li ng-click="playPause(index)">
                       <a ng-if="player.playing !== track.src">
@@ -31,7 +27,7 @@
                       </a>
                   </li>
                   <li>
-                      <a ng-click="next()"><i class="flaticon-fast46"></i></a>
+                      <a ng-click="next()"><i class="flaticon-fast46 is-btn"></i></a>
                   </li>
               </ul>
             </div>

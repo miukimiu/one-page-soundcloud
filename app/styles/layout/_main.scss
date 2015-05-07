@@ -3,7 +3,7 @@
 .home {
     // main home styles
     position: relative;
-    background: url(../images/music-main-player.jpg) no-repeat center top fixed;
+    background: url(../images/03.jpg) repeat;
     width: 100%;
 } 
 
@@ -48,6 +48,14 @@
 }
 .home-player-progress {
     background: $ops-brand;
+    text-align: center;
+    padding: $ops-spacing-xs 0;
+
+    p {
+        margin-bottom: 0;
+        top: 10px;
+        color: $ops-black;
+    }
 }
 .home-player-controls {
     text-align: center;
@@ -72,6 +80,10 @@
     i:before { // icons
         font-size: 45px;
     }
+    .is-btn {
+        position: relative;
+        top: -12px;
+    }
     .is-playPause {
         &:before { // icons
             font-size: 80px;
@@ -79,7 +91,7 @@
     }
 }
 .home-playlist {
-    background: $ops-gray-dark;
+    background: $ops-black;
     padding: ($ops-spacing-sm + $ops-spacing) 0;
 
     li {
@@ -91,11 +103,11 @@
         display: inline-block;
         padding: 5px 10px;
         margin: 5px 0;
-        background: $ops-white;
+        background: $ops-brand;
         text-transform: uppercase;
         font-weight: $ops-font-bold;
     }
     .is-active {
-        background: $ops-brand;
+        background: $ops-white;
     }
 }

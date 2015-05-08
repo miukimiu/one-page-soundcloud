@@ -19,3 +19,19 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+##Resources used on this projects
+
+* AngularJS: https://angularjs.org/
+* Pangular: https://github.com/jxnblk/plangular
+* Flat Icon Ios7 Set Lined: http://www.flaticon.com/packs/ios7-set-lined-1
+* Sass: http://sass-lang.com/
+* Compass: http://compass-style.org/
+
+##Making Changes
+* Checkout a new branch `git checkout -b my_awesome_branch`
+* Make your changes
+* Once you have made your changes, simply commit them and push them up to the new remote branch at Github.
+
+##Need Help?
+Give me a shout (mail@miukimiu.com)

@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -13,71 +14,103 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-  </head>
-  <body ng-app="onepagesoundcloudApp">
+</head>
+
+<body ng-app="onepagesoundcloudApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <!-- Add your site or application content here -->
-
     <div plangular="http://soundcloud.com/jxnblk/plangular"></div>
 
+    <main plangular="http://soundcloud.com/jxnblk/sets/yello">
     <!-- header -->
     <header class="header">
-      <div class="container">
-          <nav class="header-inner" role="navigation">
-            
-            <div class="header-logo">
-              <h1><a href="index.html">One Page Soundcloud</a></h1>
-            </div>
-            
-            <div class="header-menu"> 
-              <ul>
-                <li>
-                    <a href="#main">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#music">Music</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-      </div>
-    </header>
-    <!-- / header -->
 
-    <main id="main" role="main" plangular="http://soundcloud.com/jxnblk/sets/yello">
-      <div ng-view=""></div>
-    
-    
-      <!-- footer -->
-      <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-inner">
-                {{playlist.user.username}} - {{track.title}}
+        <div class="header-nav"> 
+            <div class="container">
+                <nav class="header-inner" role="navigation">
+                    <div class="header-logo">
+                        <h1><a href="index.html">OPS</a></h1>
+                    </div>
+                    <div class="header-menu">
+                        <ul>
+                            <li>
+                                <a href="#main">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#music">Music</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-      </footer>
-      <!-- /footer -->
 
+        <div class="header-player">
+
+            <!-- Header player controls -->
+            <div class="header-player-controls">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a ng-click="previous()"><i class="flaticon-rewind45 is-btn"></i></a>
+                        </li>
+                        <li ng-click="playPause(index)">
+                            <a ng-if="player.playing !== track.src">
+                                <i class="flaticon-play107 is-playPause"></i>
+                            </a>
+                            <a ng-if="player.playing === track.src">
+                                <i class="flaticon-pause44 is-playPause"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a ng-click="next()"><i class="flaticon-fast46 is-btn"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- / Header player controls -->
+
+            <div class="header-player-info">
+                <div class="container">
+                    <p>Playing: {{playlist.user.username}} - {{track.title}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- Header player -->
+    </header>
+    <!-- / header -->
+        
+        <div ng-view=""></div>
+        
+        <!-- footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-inner">
+                    {{playlist.user.username}} - {{track.title}}
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
     </main>
     <!-- /main  -->
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
     </script>
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -92,11 +125,11 @@
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>

@@ -1,43 +1,9 @@
 <!-- Home -->
 <div class="home">
-  <header class="home-header main-header">
+  <div class="home-player-wrapper">
 
-    <div class="home-player">
-
-      <div class="home-player-progress">
-        <div class="container"> 
-          <p>Playing: {{playlist.user.username}} - {{track.title}} </p>
-        </div>
-      </div>
-
-        <!-- Home player controls -->
-        <div class="home-player-controls">
-          <div class="container">
-
-              <ul>
-                  <li>
-                      <a ng-click="previous()"><i class="flaticon-rewind45 is-btn"></i></a>
-                  </li>
-                  <li ng-click="playPause(index)">
-                      <a ng-if="player.playing !== track.src">
-                          <i class="flaticon-play105 is-playPause"></i>
-                      </a>
-                      <a ng-if="player.playing === track.src">
-                          <i class="flaticon-pause44 is-playPause"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a ng-click="next()"><i class="flaticon-fast46 is-btn"></i></a>
-                  </li>
-              </ul>
-            </div>
-            <!-- .container -->
-        </div>
-        <!-- / Home player controls -->
-      
-    </div>
-    <!-- home-player -->
-  </header>
+  
+  </div>
   <!-- home-player-wrapper -->
 
   <div class="home-playlist">

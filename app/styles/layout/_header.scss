@@ -7,6 +7,7 @@
     height: $ops-spacing-lg;
     width: 100%;
     z-index: 999;
+    background: $color-brand;
 
     .header-inner {
         position: relative;
@@ -19,43 +20,49 @@
         }
         .header-menu {
             @include make-xs-column(12);
-           @include make-sm-column(6);
+            @include make-sm-column(6);
         }
     }
 }
 
-.header {
-    height: $ops-spacing-lg;
-
-    .header-logo {
-        h1 {
-            padding: 0;
-            margin: 0;
-            font-size: 20px;
-            line-height: 1.2;
-        }
-        a {
-            font-weight: $ops-font-normal;
-            text-transform: uppercase;
-            color: $ops-brand;
-            background: $ops-black;
-            padding: 5px 10px;
-        }
+.header-logo {
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.2;
     }
-
-    .header-menu {
-        text-align: right;
-
-        ul {
-
-        }
-        li {
-            display: inline-block;
-        }
-        a {
-            display: block;
-            padding: 0 $ops-spacing-xs;
-            color: $ops-white;
-        }
+    a {
+        font-weight: $ops-font-normal;
+        text-transform: uppercase;
+        color: $color-white;
+        padding: 5px 10px;
     }
+}
+
+.header-menu {
+    text-align: right;
+
+    ul {
+
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        display: block;
+        padding: 0 $ops-spacing-xs;
+        color: $ops-white;
+    }
+}
+
+
+.header-player {
+    background: $color-active;
+}
+.header-player-controls {
+
+}
+.header-player-info {
+    background: $color-brand;
 }

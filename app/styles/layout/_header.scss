@@ -61,7 +61,28 @@
     background: $color-active;
 }
 .header-player-controls {
+    text-align: center;
+    display: block;
 
+    li {
+        display: inline-block;
+    }
+    i:before {
+        font-size: 45px;
+        line-height: 60px;
+        margin: 0;
+    }
+    .is-btn {
+        color: $color-white;
+    }
+    .is-playPause {
+        color: $color-secondary;
+
+        &:before {
+            font-size: 60px;
+            line-height: 1;
+        }
+    }
 }
 .header-player-info {
     background: $color-brand;

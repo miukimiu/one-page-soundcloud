@@ -66,6 +66,11 @@
 
     li {
         display: inline-block;
+
+        &.is-circle:after {
+            padding: 30px;
+            border-radius: 50%;
+        }
     }
     i:before {
         font-size: 45px;

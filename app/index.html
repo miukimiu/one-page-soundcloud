@@ -59,13 +59,15 @@
                         <li>
                             <a ng-click="previous()"><i class="flaticon-rewind45 is-btn"></i></a>
                         </li>
-                        <li ng-click="playPause(index)" class="is-circle">
-                            <a ng-if="player.playing !== track.src">
-                                <i class="flaticon-play107 is-playPause"></i>
-                            </a>
-                            <a ng-if="player.playing === track.src">
-                                <i class="flaticon-pause44 is-playPause"></i>
-                            </a>
+                        <li ng-click="playPause(index)">
+                            <div class="is-circle">
+                                <a ng-if="player.playing !== track.src">
+                                    <i class="flaticon-play107 is-playPause"></i>
+                                </a>
+                                <a ng-if="player.playing === track.src">
+                                    <i class="flaticon-pause44 is-playPause"></i>
+                                </a>
+                            </div>
                         </li>
                         <li>
                             <a ng-click="next()"><i class="flaticon-fast46 is-btn"></i></a>

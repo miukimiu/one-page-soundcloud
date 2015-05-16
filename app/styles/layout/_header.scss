@@ -69,7 +69,7 @@
     }
     i:before {
         font-size: 45px;
-        line-height: 60px;
+        line-height: 45px;
         margin: 0;
     }
     .is-btn {
@@ -98,6 +98,7 @@
         height: $size;
         margin-left: -$size/2;
         margin-top: -$size/2;
+        background: $color-active;
     }
 }
 .header-player-info {

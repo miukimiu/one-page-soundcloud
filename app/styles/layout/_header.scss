@@ -56,6 +56,10 @@
     }
 }
 
+/* header player */
+
+// variables
+$size: 75px;
 
 .header-player {
     background: $color-active;
@@ -69,7 +73,7 @@
     }
     i:before {
         font-size: 45px;
-        line-height: 45px;
+        line-height: $size;
         margin: 0;
     }
     .is-btn {
@@ -89,7 +93,7 @@
         position: relative;
     }
     .is-circle {
-        $size: 75px;
+        
         border-radius: 50%;
         position: absolute;
         top: 50%;

@@ -73,7 +73,7 @@ $size: 75px;
     }
     i:before {
         font-size: 45px;
-        line-height: $size;
+        line-height: 1;
         margin: 0;
     }
     .is-btn {
@@ -84,7 +84,7 @@ $size: 75px;
 
         &:before {
             font-size: 60px;
-            line-height: 1;
+            line-height: $size;
         }
     }
     .has-circle {

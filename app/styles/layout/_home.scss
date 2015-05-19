@@ -97,15 +97,16 @@
         cursor: pointer;
         text-align: center;
     }
-    .is-song-in-playlist {
-        display: inline-block;
-        padding: 5px 10px;
-        margin: 5px 0;
-        background: $ops-brand;
-        text-transform: uppercase;
-        font-weight: $ops-font-bold;
-    }
-    .is-active {
-        background: $ops-white;
+}
+.home-playlist-item {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    background: $color-inactive;
+    text-transform: uppercase;
+    font-weight: $ops-font-bold;
+    
+    &.is-active {
+        background: $color-active;
     }
 }

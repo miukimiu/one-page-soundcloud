@@ -10,7 +10,7 @@
     <div class="container">  
       <ul>
         <li ng-repeat="track in tracks">
-          <div class="is-song-in-playlist" ng-class="{'is-active': player.playing === track.src }" ng-click="playPause($index)">
+          <div class="home-playlist-item" ng-class="{'is-active': player.playing === track.src }" ng-click="playPause($index)">
             
             <span>
               {{track.user.username}} - {{track.title}}

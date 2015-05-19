@@ -6,6 +6,7 @@
           position: absolute;
           top: 0px;
           z-index: 2;
+          width: 100%
     }
     .header-inner {
         position: relative;
@@ -60,10 +61,9 @@
 .header-artwork {
     background: $color-brand;
     position: relative;
-    margin-top: -65px;
 
     .header-artwork-inner {
-        padding: $ops-spacing-xs;
+        padding: $ops-spacing-sm;
         position: relative;
 
         &:after {
@@ -100,9 +100,9 @@
 $size: 75px;
 
 .header-player {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    top: 90px;
+    top: 100px;
 }
 .header-player-controls {
     background: $color-active;

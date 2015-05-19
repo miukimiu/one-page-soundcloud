@@ -1,14 +1,12 @@
 // Header Styles
 
 .header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: $ops-spacing-lg;
-    width: 100%;
-    z-index: 999;
     background: $color-brand;
-
+    .header-nav {
+          position: absolute;
+          top: 0px;
+          z-index: 2;
+    }
     .header-inner {
         position: relative;
         padding: 20px 0;
@@ -56,15 +54,58 @@
     }
 }
 
-/* header player */
+/*
+* header artwork
+*/
+.header-artwork {
+    background: $color-brand;
+    position: relative;
+    margin-top: -65px;
+
+    .header-artwork-inner {
+        padding: $ops-spacing-xs;
+        position: relative;
+
+        &:after {
+            $size: 44px;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -($size/2);
+            margin-top: -($size/2);
+            display: block;
+            width: $size;
+            height: $size;
+            text-align: center;
+            background: $color-brand;
+            border-radius: 50%;
+        }
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        position: relative;
+        width: 210px;
+        height: 210px;
+    }
+}
+
+/* 
+* header player
+*/
 
 // variables
 $size: 75px;
 
 .header-player {
-    background: $color-active;
+    position: fixed;
+    width: 100%;
+    top: 90px;
 }
 .header-player-controls {
+    background: $color-active;
     text-align: center;
     display: block;
 
@@ -106,7 +147,7 @@ $size: 75px;
     }
 }
 .header-player-info {
-    background: $color-brand;
+    background: rgba($color-brand, 0.5);
     text-align: center;
     color: $color-white;
     padding: ($ops-spacing-sm + $ops-spacing-xxs) 0 $ops-spacing-xs;

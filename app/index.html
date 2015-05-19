@@ -50,11 +50,18 @@
             </div>
         </div>
 
+        <div class="header-artwork">
+            <div class="header-artwork-inner">
+                <img ng-src="{{ track.artwork_url  }}" alt="{{ track.title }}" />
+            </div>
+        </div>
+
         <div class="header-player">
 
             <!-- Header player controls -->
             <div class="header-player-controls">
                 <div class="container">
+
                     <ul>
                         <li>
                             <a ng-click="previous()"><i class="flaticon-rewind45 is-btn"></i></a>

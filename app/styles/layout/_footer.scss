@@ -6,9 +6,11 @@
     $footer-height: 50px;
 
     // styles
-    color: $ops-gray-light;
+    color: $color-gray;
     font-size: 12px;
-    background: $ops-black;
+    text-align: center;
+    background: $color-bg;
+    padding: $ops-spacing-xs;
 
     // layout structure
     .footer-inner {
@@ -26,7 +28,7 @@
 
     // link styles
     a {
-        color: $ops-gray-light;
+        color: $color-active;
 
         &:hover,
         &:focus,

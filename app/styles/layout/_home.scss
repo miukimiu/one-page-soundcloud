@@ -9,14 +9,9 @@
     position: relative;
     padding-top: 200px;
     width: 100%;
-
-    // mobile above / 480px above
-    @media (min-width: $screen-xs-min) {
-        padding-top: 300px;
-    }
 }
 .home-player {
-    color: $ops-white;
+    color: $color-white;
     background: rgba($ops-black, 0.8);
 }
 .home-player-waveform {
@@ -89,7 +84,6 @@
     }
 }
 .home-playlist {
-    background: $ops-black;
     padding: ($ops-spacing-sm + $ops-spacing) 0;
 
     li {
@@ -104,7 +98,8 @@
     margin: 5px 0;
     background: $color-inactive;
     text-transform: uppercase;
-    font-weight: $ops-font-bold;
+    font-weight: $font-regular;
+    color: $color-white;
     
     &.is-active {
         background: $color-active;

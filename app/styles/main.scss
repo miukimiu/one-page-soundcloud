@@ -1,4 +1,4 @@
-//@import "compass";
+@import "compass";
 
 // vendor
 @import "vendor/bootstrap-custom/";
@@ -6,6 +6,7 @@
 // helper files
 @import "helpers/variables";
 @import "helpers/mixins";
+@import "helpers/animations";
 
 // base
 @import "base/base";

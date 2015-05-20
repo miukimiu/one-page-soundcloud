@@ -49,10 +49,9 @@
                 </nav>
             </div>
         </div>
-
         <div class="header-artwork">
             <div class="header-artwork-inner">
-                <img ng-src="{{ track.artwork_url  }}" alt="{{ track.title }}" />
+                <img ng-src="{{ track.artwork_url  }}" alt="{{ track.title }}" ng-class="{ 'spin' : player.playing==track.src}" />
             </div>
         </div>
 

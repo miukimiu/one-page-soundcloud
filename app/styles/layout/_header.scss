@@ -99,12 +99,12 @@
 // variables
 $size: 75px;
 
-.header-player {
+.player {
     position: absolute;
     width: 100%;
     top: 100px;
 }
-.header-player-controls {
+.player-controls {
     background: $color-active;
     text-align: center;
     display: block;
@@ -146,7 +146,7 @@ $size: 75px;
         background: $color-active;
     }
 }
-.header-player-info {
+.player-info {
     background: rgba($color-brand, 0.5);
     text-align: center;
     color: $color-white;

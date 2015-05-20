@@ -55,43 +55,7 @@
             </div>
         </div>
 
-        <div class="header-player">
-
-            <!-- Header player controls -->
-            <div class="header-player-controls">
-                <div class="container">
-
-                    <ul>
-                        <li>
-                            <a ng-click="previous()"><i class="flaticon-rewind45 is-btn"></i></a>
-                        </li>
-                        <li ng-click="playPause(index)" class="has-circle">
-                            <div class="is-circle">
-
-                                <a ng-if="player.playing !== track.src">
-                                    <i class="flaticon-play107 is-playPause"></i>
-                                </a>
-                                <a ng-if="player.playing === track.src">
-                                    <i class="flaticon-pause44 is-playPause"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <a ng-click="next()"><i class="flaticon-fast46 is-btn"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- .container -->
-            </div>
-            <!-- / Header player controls -->
-
-            <div class="header-player-info">
-                <div class="container">
-                    <p>Playing: {{playlist.user.username}} - {{track.title}}</p>
-                </div>
-            </div>
-        </div>
-        <!-- Header player -->
+        <ng-include src="'includes/player.html'"></ng-include>
     </header>
     <!-- / header -->
         

@@ -1,3 +1,7 @@
 .about {
     padding: $ops-spacing-sm 0;
+
+    .container {
+        max-width: 750px;
+    }
 }

@@ -8,20 +8,10 @@
         <h3>Single page web app</h3>
       </article>
 
-      <ul>
-        <li ng-repeat="track in tracks">
-          <div class="home-playlist-item" ng-class="{'is-active': player.playing === track.src }" ng-click="playPause($index)">
-            
-            <span>
-              {{track.user.username}} - {{track.title}}
-            </span>
-            
-            <span>
-              {{ track.duration / 1000 | hhmmss }}
-            </span>
-          </div>
-        </li>
-      </ul>
+      <!-- Playlist -->
+      <ng-include src="'includes/playlist.html'"></ng-include>
+      <!-- / Playlist -->
+
     </div>
   </div>
 </div>

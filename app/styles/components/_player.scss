@@ -27,13 +27,11 @@ $size: 75px;
         color: $color-white;
     }
     .is-playPause {
-        color: $color-secondary;
+        color: $color-white;
 
         &:before {
             font-size: 60px;
             line-height: $size;
-            background: $color-white;
-            border-radius: 50%;
         }
     }
     .has-circle {

@@ -50,7 +50,9 @@
         </div>
         <div class="header-artwork">
             <div class="header-artwork-inner">
-                <img ng-src="{{ track.artwork_url  }}" alt="{{ track.title }}" ng-class="{ 'spin' : player.playing==track.src}" />
+                <div class="image">
+                    <img ng-src="{{ track.artwork_url  }}" alt="{{ track.title }}" ng-class="{ 'spin' : player.playing==track.src}" />
+                </div >
             </div>
         </div>
 

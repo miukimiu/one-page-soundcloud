@@ -9,6 +9,8 @@
     z-index: 999;
 
     .header-nav {
+        position: relative;
+        z-index: 99999;
     }
     .header-inner {
         position: relative;
@@ -16,12 +18,12 @@
         @include make-row();
 
         .header-logo {
-            @include make-xs-column(12);
-            @include make-sm-column(6);
+            float: left;
+            width: 30%;
         }
         .header-menu {
-            @include make-xs-column(12);
-            @include make-sm-column(6);
+            float: left;
+            width: 70%;
         }
     }
 }

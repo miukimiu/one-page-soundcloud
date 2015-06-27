@@ -6,7 +6,7 @@
 $size: 75px;
 
 .player {
-    position: relative;
+    position: absolute;
     width: 100%;
 }
 .player-controls {
@@ -52,7 +52,7 @@ $size: 75px;
     }
 }
 .player-info {
-    background: rgba($color-black, 0.1);
+    background: rgba($color-black, 0.4);
     text-align: center;
     color: $color-white;
     padding: ($ops-spacing-sm + $ops-spacing-xxs) 0 $ops-spacing-xs;

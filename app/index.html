@@ -49,10 +49,8 @@
             </div>
         </div>
         <div class="header-artwork">
-            <div class="header-artwork-inner">
-                <div class="image">
-                    <img ng-src="{{ track.artwork_url  }}" alt="{{ track.title }}" ng-class="{ 'spin' : player.playing==track.src}" />
-                </div >
+            <div class="header-artwork-inner" ng-if="player.playing === track.src">
+                <img ng-src="{{ track.artwork_url  }}" alt="{{ track.title }}" ng-class="{ 'spin' : player.playing==track.src}" />
             </div>
         </div>
 
@@ -62,7 +60,7 @@
     </header>
     <!-- / header -->
         
-        <div ng-view=""></div>
+        <section ng-view="" class="content"></section>
     </main>
     <!-- /main  -->
 

@@ -6,9 +6,8 @@
 $size: 75px;
 
 .player {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 100px;
 }
 .player-controls {
     background: $color-active;

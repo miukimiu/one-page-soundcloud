@@ -95,6 +95,10 @@
     text-transform: uppercase;
     font-weight: $font-regular;
     color: $color-white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
     
     &.is-active {
         background: $color-active;

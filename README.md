@@ -5,7 +5,7 @@ There are now many great resources in order do achieve that. After some research
 With some html and CSS/SASS the result was an one page site.
 
 You can see it in action, here:
-http://miukimiu.github.io/onepagesoundcloud/
+http://miukimiu.github.io/one-page-soundcloud/
 
 ## Getting Started
 * This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)

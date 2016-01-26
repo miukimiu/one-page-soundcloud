@@ -9,8 +9,7 @@ http://miukimiu.github.io/one-page-soundcloud/
 
 ## Info
 * This project was generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
-* Install pangular with `bower install pangular`
+version 0.11.1
 
 ## Build & development
 
